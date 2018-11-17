@@ -52,3 +52,15 @@
   overflow: auto;
   flex-grow: 1;
 }
+
+// If items are being reordered through dragging, all other elements should
+// reorder smoothly. Also if an item is being dropped, it should animate
+// into its target position.
+.cdk-drag-animating, .cdk-drop-list-dragging .cdk-drag {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+// Hides the placeholder if an element is being dragged.
+.cdk-drag-placeholder {
+  opacity: 0;
+}

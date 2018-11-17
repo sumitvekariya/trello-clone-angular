@@ -8,12 +8,15 @@ import { DrawerComponent } from './drawer/drawer.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatChipsModule } from '@angular/material';
 import { CardComponent } from './card/card.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { EditTalkComponent } from './edit-talk/edit-talk.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrawerComponent,
-    CardComponent
+    CardComponent,
+    EditTalkComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { CardComponent } from './card/card.component';
     MatListModule,
     MatCardModule,
     MatChipsModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,22 @@
 <app-drawer>
-  <div class="board">
+  <div class="board" cdkDropList [cdkDropListData]="board.tracks" (cdkDropListDropped)="onTrackDrop($event)" cdkDropListOrientation="horizontal">
+
     <div class="card-list mat-elevation-z1" *ngFor="let track of board.tracks">
-      <h2 class="mat-h2">{{track.title}}</h2>
-      <div class="card-list-content">
-        <app-card *ngFor="let talk of track.talks" [text]="talk.text" [tags]="talk.tags" [author]="talk.speaker" [image]="talk.image"></app-card>
+
+      <h2 cdkDragHandle class="mat-h2">{{track.title}}</h2>
+
+      <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.talks"
+        [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">
+
+        <app-card *ngFor="let talk of track.talks" [text]="talk.text" [tags]="talk.tags" [author]="talk.speaker"
+          [image]="talk.image" cdkDrag></app-card>
+
       </div>
+
       <button (click)="addNewTalk(track)" color="primary" mat-raised-button>Add talk</button>
+
     </div>
+
   </div>
 </app-drawer>
 
