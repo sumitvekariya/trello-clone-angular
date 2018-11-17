@@ -11,13 +11,15 @@ import { CardComponent } from './card/card.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { EditTalkComponent } from './edit-talk/edit-talk.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DeleteTalkComponent } from './delete-talk/delete-talk.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrawerComponent,
     CardComponent,
-    EditTalkComponent
+    EditTalkComponent,
+    DeleteTalkComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
   ],
   providers: [],
-  entryComponents: [EditTalkComponent],
+  entryComponents: [EditTalkComponent, DeleteTalkComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class CardComponent implements OnInit {
 
   @Output() edit = new EventEmitter<void>();
+  @Output() delete = new EventEmitter<void>();
   @Input() text: string;
   @Input() author: string;
   @Input() tags: string[];

@@ -3,6 +3,7 @@ import { BoardService, Track, Talk } from './board.service';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { EditTalkComponent } from './edit-talk/edit-talk.component';
 import { MatDialog } from '@angular/material/dialog';
+import { DeleteTalkComponent } from './delete-talk/delete-talk.component';
 
 @Component({
   selector: 'app-root',
@@ -55,5 +56,17 @@ export class AppComponent {
     this._dialog.open(EditTalkComponent, {data: talk, width: '500px'})
       .afterClosed()
       .subscribe(newTalkData => Object.assign(talk, newTalkData));
+  }
+
+  deleteTalk(talk: Talk, track: Track) {
+    // Open a dialog
+    this._dialog.open(DeleteTalkComponent, {data: talk, width: '500px'})
+      .afterClosed()
+      .subscribe(response => {
+        // Wait for it to close and delete the talk if the user agreed.
+        if (response) {
+          track.talks.splice(track.talks.indexOf(talk), 1);
+        }
+      });
   }
 }

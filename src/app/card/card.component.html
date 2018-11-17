@@ -4,7 +4,8 @@
 
   <!-- Use the mat-card-content to add the proper spacing. -->
   <mat-card-content>
-    {{text}}
+      {{text}}
+      <div *ngIf="author">By: {{author}}</div>
 
     <div *ngIf="tags">
       <!--
@@ -19,7 +20,7 @@
 
   <!-- Section for buttons and the talk author. -->
   <mat-card-actions>
-    <div class="author" *ngIf="author">By: {{author}}</div>
+    <button mat-button (click)="delete.next()">DELETE</button>
     <button mat-button (click)="edit.next()">EDIT</button>
   </mat-card-actions>
 </mat-card>

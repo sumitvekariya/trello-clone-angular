@@ -13,7 +13,7 @@
 .mat-card-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 // Add some spacing to the chip list
@@ -30,7 +30,7 @@
 }
 
 // Increase the size of the author's name and add some spacing.
-.author {
-  font-size: 14px;
-  margin-left: 8px;
-}
+// .author {
+//   font-size: 14px;
+//   margin-left: 8px;
+// }
