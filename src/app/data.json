@@ -1,0 +1,314 @@
+[
+  {
+    "title": "Day one",
+    "tracks": [
+      {
+        "id": "track-one",
+        "title": "Track one",
+        "talks": [
+          {
+            "text": "Keynote addess",
+            "speaker": "Igor Minar",
+            "image": "https://i.ytimg.com/vi/7Bj4R7lGl4A/maxresdefault.jpg"
+          },
+          {
+            "text": "VS Code Can Do That",
+            "speaker": "John Papa",
+            "tags": [
+              "Intro"
+            ]
+          },
+          {
+            "text": "How to save time & money by planning your ngUpgrade",
+            "speaker": "Sam Julien"
+          },
+          {
+            "text": "How to AI in JS?",
+            "speaker": "Asim Hussain",
+            "tags": [
+              "Intro"
+            ]
+          },
+          {
+            "text": "You Might Not Need NgRx",
+            "speaker": "Michael Ryan"
+          },
+          {
+            "text": "Upgrading to Angular without ngUpgrade",
+            "speaker": "Erin Coughlan"
+          },
+          {
+            "text": "Why you need a build system, and why it should be Bazel",
+            "speaker": "Martin Probst"
+          },
+          {
+            "text": "The theory of Angular Ivy",
+            "speaker": "Alex Rickabaugh"
+          },
+          {
+            "text": "Building an Angular PWA: Angular Service Worker or Workbox?",
+            "speaker": "Maxim Salnikov",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Angular Unit Testing - how to win friends, design better code, and get rich quick!",
+            "speaker": "Shai Reznik"
+          }
+        ]
+      },
+      {
+        "id": "track-two",
+        "title": "Track two",
+        "talks": [
+          {
+            "text": "Automating UI development",
+            "speaker": "Stefan Baumgartner and Katrin Freihofner"
+          },
+          {
+            "text": "RxJS schedulers in depth",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/London_Thames_Sunset_panorama_-_Feb_2008.jpg/640px-London_Thames_Sunset_panorama_-_Feb_2008.jpg",
+            "speaker": "Michael Hladky",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "The good, the bad and the ugly - Component architecture at scale",
+            "speaker": "Ana Cidre and Sherry List",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Universally speaking",
+            "speaker": "Craig Spence",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Optimize and debug change detection like a pro",
+            "speaker": "Max Koretskyi",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Nest the backend for your Angular application",
+            "speaker": "Bo Vandersteene",
+            "tags": [
+              "Intro"
+            ]
+          },
+          {
+            "text": "Testing Angular with Cypress.io",
+            "speaker": "Joe Eames",
+            "tags": [
+              "Intro"
+            ]
+          },
+          {
+            "text": "Location based immersive experiences with Angular and WebXR",
+            "speaker": "Aysegul Yonet"
+          }
+        ]
+      },
+      {
+        "id": "mini-workshops",
+        "title": "Mini workshops",
+        "talks": [
+          {
+            "text": "Deep dive into Angular CLI 7",
+            "speaker": "Noël Macé"
+          },
+          {
+            "text": "Angular Material workshop",
+            "speaker": "Kristiyan Kostadinov and Paul Gschwendtner",
+            "image": "https://pbs.twimg.com/media/DoRVQNuXUAAg7Zt.jpg"
+          },
+          {
+            "text": "#UseThePlatform with Stencil and Angular",
+            "speaker": "Gil Fink"
+          }
+        ]
+      },
+      {
+        "id": "office-hours",
+        "title": "Office hours",
+        "talks": [
+          {
+            "text": "Stefan Baumgartner, Michael Hladky, Katrin Freihofner, Igor Minar"
+          },
+          {
+            "text": "Ana Cidre, Sam Julien, Sherry List, Noël Macé, Michael Ryan",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/640px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
+          },
+          {
+            "text": "Sani Yusuf, Craig Spence, Maxim Salnikov, Olivier Combe, Misko Hevery"
+          },
+          {
+            "text": "Erin Coughlan, Martin Probst, Max Koretskyi, Bo Vandersteene"
+          }
+        ]
+      },
+      {
+        "id": "qa-panels",
+        "title": "Q&A panels",
+        "talks": [
+          {
+            "text": "Upgrade",
+            "speaker": "Elana Olson, Erin Coughlan, Sam Julien"
+          },
+          {
+            "text": "UI",
+            "speaker": "Shmuela Jacobs, Ana Cidre, Sherry List, Kristiyan Kostadinov, Paul Gschwendtner, Katrin Freihofner"
+          },
+          {
+            "text": "Ivy",
+            "speaker": "Alex Rickabaugh, Jason Aden, Olivier Combe, Igor Minar, Misko Hevery",
+            "image": "https://pbs.twimg.com/media/DoHCNnlUUAUWfhG.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Day two",
+    "tracks": [
+      {
+        "id": "track-one",
+        "title": "Track one",
+        "talks": [
+          {
+            "text": "Keynote address",
+            "speaker": "Rob Wormald",
+            "image": "https://i.ytimg.com/vi/7Bj4R7lGl4A/maxresdefault.jpg"
+          },
+          {
+            "text": "Angular Ivy by example",
+            "speaker": "Jason Aden",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Migrating from AngularJS to Angular",
+            "speaker": "Elana Olson",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/640px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
+          },
+          {
+            "text": "Climbing up injector trees",
+            "speaker": "Uri Shaked and Kapunahele Wong",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "Architectures for huge Angular based enterprise applications: npm Packages, Monorepos and Micro Apps",
+            "speaker": "Manfred Steyer"
+          },
+          {
+            "text": "Talk details coming soon",
+            "speaker": "Filipe Silva"
+          },
+          {
+            "text": "Runtime i18n with Ivy",
+            "speaker": "Olivier Combe"
+          }
+        ]
+      },
+      {
+        "id": "track-two",
+        "title": "Track two",
+        "talks": [
+          {
+            "text": "Automate G Suite with Apps Script and Angular",
+            "speaker": "Grant Timmerman"
+          },
+          {
+            "text": "Dynamic reactive forms with GraphQL",
+            "speaker": "Juan Stoppa"
+          },
+          {
+            "text": "The life of an Angular pull request",
+            "speaker": "Manu Murthy",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/London_Thames_Sunset_panorama_-_Feb_2008.jpg/640px-London_Thames_Sunset_panorama_-_Feb_2008.jpg"
+          },
+          {
+            "text": "White-labeling & A/B testing with interchangeable components",
+            "speaker": "Younes Jaaidi",
+            "tags": [
+              "Deep-dive"
+            ]
+          },
+          {
+            "text": "It’s alive! Dynamic components in Angular",
+            "speaker": "Shmuela Jacobs",
+            "tags": [
+              "Intro"
+            ]
+          },
+          {
+            "text": "Crossing Across Platforms",
+            "speaker": "Sani Yusuf"
+          }
+        ]
+      },
+      {
+        "id": "mini-workshops",
+        "title": "Mini workshops",
+        "talks": [
+          {
+            "text": "Getting to grips with Angular State with NgRx and RxJS",
+            "speaker": "Ferdinand Malcher and Johannes Hoppe"
+          }
+        ]
+      },
+      {
+        "title": "Office hours",
+        "talks": [
+          {
+            "text": "Joe Eames, Alex Rickabaugh, Gil Fink, Shai Reznik, Aysegul Yonet"
+          },
+          {
+            "text": "Rob Wormald, Elana Olson, Grant Timmerman, Jason Aden, Juan Stoppa"
+          },
+          {
+            "text": "John Papa, Manu Murthy, Younes Jaaidi, Manfred Steyer, Ferdinand Malcher, Johannes Hoppe"
+          },
+          {
+            "text": "Shmuela Jacobs, Uri Shaked, Kapunahele Wong, Stanimira Vlaeva, Filipe Silva"
+          }
+        ]
+      },
+      {
+        "id": "qa-panels",
+        "title": "Q&A panels",
+        "talks": [
+          {
+            "text": "Tooling",
+            "speaker": "Martin Probst, John Papa, Manu Murthy, Manfred Steyer, Noël Macé, Filipe Silva"
+          },
+          {
+            "text": "Testing",
+            "speaker": "Joe Eames, Younes Jaaidi, Shai Reznik"
+          },
+          {
+            "text": "Coding",
+            "speaker": "Ward Bell, Uri Shaked, Kapunahele Wong, Max Koretskyi, Michael Hladky, Gil Fink, Ashnita Bali"
+          },
+          {
+            "text": "Integration",
+            "speaker": "Sani Yusuf, Grant Timmerman, Juan Stoppa, Stanimira Vlaeva, Aysegul Yonet"
+          },
+          {
+            "text": "Architecture",
+            "speaker": "Dominic Elm, Mike Ryan, Rob Wormald, Manfred Steyer, Craig Spence, Bo Vandersteene, Ferdinand Malcher, Johannes Hoppe"
+          }
+        ]
+      }
+    ]
+  }
+]

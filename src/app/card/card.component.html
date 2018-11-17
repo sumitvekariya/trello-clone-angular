@@ -1,0 +1,25 @@
+<mat-card>
+  <!-- mat-card allows us to optionally provide a card image. -->
+  <img *ngIf="image" mat-card-image [src]="image">
+
+  <!-- Use the mat-card-content to add the proper spacing. -->
+  <mat-card-content>
+    {{text}}
+
+    <div *ngIf="tags">
+      <!--
+        Render out the tags as a list of chips. Note that we want
+        readonly chips so we `selectable` to `false`.
+      -->
+      <mat-chip-list>
+        <mat-chip *ngFor="let tag of tags" selectable="false">{{tag}}</mat-chip>
+      </mat-chip-list>
+    </div>
+  </mat-card-content>
+
+  <!-- Section for buttons and the talk author. -->
+  <mat-card-actions>
+    <div class="author" *ngIf="author">By: {{author}}</div>
+    <button mat-button>EDIT</button>
+  </mat-card-actions>
+</mat-card>
