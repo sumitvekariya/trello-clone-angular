@@ -1,0 +1,19 @@
+$dialog-default-padding: 24px;
+$edit-talk-dialog-width: 500px;
+
+img {
+  width: $edit-talk-dialog-width;
+
+  // Shift the image to ignore the default margin of the dialog. We want to
+  // show the talk image as a full-width dialog header.
+  margin: (-$dialog-default-padding) (-$dialog-default-padding) 0px;
+  padding-bottom: 8px;
+}
+
+.mat-form-field {
+  display: block;
+}
+
+.mat-button {
+  text-transform: uppercase;
+}

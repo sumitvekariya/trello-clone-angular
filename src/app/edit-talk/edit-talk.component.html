@@ -1,0 +1,21 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <img *ngIf="talk.image" [src]="talk.image" alt="Talk image preview">
+  <mat-form-field>
+    <input matInput placeholder="Talk description" required formControlName="text">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Speaker" required formControlName="speaker">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Image URL" formControlName="image">
+  </mat-form-field>
+  <mat-dialog-actions align="end">
+    <!--
+        mat-dialog-close is a directive from the `MatDialogModule` which can be used
+        to close the current dialog in a declarative way on element click.
+      -->
+    <button mat-button mat-dialog-close>Cancel</button>
+
+    <button mat-button type="submit" [disabled]="formGroup.invalid">Update</button>
+  </mat-dialog-actions>
+</form>

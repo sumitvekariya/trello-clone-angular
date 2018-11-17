@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { BoardService, Track, Talk } from './board.service';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { EditTalkComponent } from './edit-talk/edit-talk.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private _boardService: BoardService) {}
+  constructor(private _boardService: BoardService, private _dialog: MatDialog) {}
 
   get board() {
     return this._boardService.currentBoard;
@@ -44,5 +46,14 @@ export class AppComponent {
 
   onTrackDrop(event: CdkDragDrop<Track[]>) {
     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+  }
+
+  editTalk(talk: Talk) {
+    // Use the injected dialog service to launch the previously created edit-talk
+    // component. Once the dialog closes, we assign the updated talk data to
+    // the specified talk.
+    this._dialog.open(EditTalkComponent, {data: talk, width: '500px'})
+      .afterClosed()
+      .subscribe(newTalkData => Object.assign(talk, newTalkData));
   }
 }
