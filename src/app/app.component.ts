@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BoardService } from './board.service';
+import { BoardService, Track } from './board.service';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,11 @@ export class AppComponent {
 
   get board() {
     return this._boardService.currentBoard;
+  }
+
+  addNewTalk(track: Track) {
+    track.talks.push({
+      text: 'New talk'
+    });
   }
 }

@@ -29,3 +29,26 @@
   border-radius: 4px;
   padding: 8px;
 }
+
+.card-list {
+  // Makes it possible for the `card-list-content ` to take up the remaining space.
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    // Extra spacing to make things look better.
+    margin-bottom: 5px;
+  }
+
+  button {
+    // The flex-shrink prevents the button from shrinking if the list content becomes too large.
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+}
+
+.card-list-content {
+  // Make the list scrollable and stretch it to take up the available height.
+  overflow: auto;
+  flex-grow: 1;
+}
