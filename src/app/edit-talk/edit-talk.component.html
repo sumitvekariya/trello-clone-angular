@@ -9,6 +9,26 @@
   <mat-form-field>
     <input matInput placeholder="Image URL" formControlName="image">
   </mat-form-field>
+  <mat-form-field>
+    <!-- Add the chip list and associate it with a new form control. -->
+    <mat-chip-list #tags formControlName="tags">
+      <!--
+          Render out all the chips that are set to the form control.
+          Also listen for the `removed` event which will notify use when to remove a tag.
+        -->
+      <mat-chip *ngFor="let tag of this.formGroup.get('tags').value" (removed)="removeTag(tag)">
+        {{tag}}
+        <!-- Add an icon that allows the user to delete a talk via click. -->
+        <mat-icon matChipRemove>cancel</mat-icon>
+      </mat-chip>
+
+      <!--
+          Input into which the user can type new tags. The `matChipInputTokenEnd` event will fire
+          whenever the user presses enter or they focus outside the input.
+        -->
+      <input placeholder="Add tags" [matChipInputFor]="tags" (matChipInputTokenEnd)="addTag($event)" />
+    </mat-chip-list>
+  </mat-form-field>
   <mat-dialog-actions align="end">
     <!--
         mat-dialog-close is a directive from the `MatDialogModule` which can be used
