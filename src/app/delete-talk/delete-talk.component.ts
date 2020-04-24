@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material';
-import { Talk } from '../board.service';
+// import { MAT_DIALOG_DATA } from '@angular/material';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Talk } from '../shared/models/schema.model';
 
 @Component({
   selector: 'app-delete-talk',

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { BoardService, Track, Talk } from './board.service';
+import { BoardService } from './board.service';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { EditTalkComponent } from './edit-talk/edit-talk.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DeleteTalkComponent } from './delete-talk/delete-talk.component';
+import { Board, Talk, Track } from './shared/models/schema.model';
 
 @Component({
   selector: 'app-root',
@@ -11,24 +12,17 @@ import { DeleteTalkComponent } from './delete-talk/delete-talk.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private _boardService: BoardService, private _dialog: MatDialog) {}
-
-  get board() {
-    return this._boardService.currentBoard;
-  }
-
-  addNewTalk(track: Track) {
-    track.talks.push({
-      text: 'New talk'
-    });
+  boards: Board[] = [];
+  constructor(private _boardService: BoardService, private _dialog: MatDialog) {
+    this.boards = this._boardService.getBoards();
   }
 
   /**
    * An array of all track ids. Each id is associated with a `cdkDropList` for the
    * track talks. This property can be used to connect all drop lists together.
    */
-  get trackIds(): string[] {
-    return this.board.tracks.map(track => track.id);
+  trackIds(boardIndex): string[] {
+    return this.boards[boardIndex].tracks.map(track => track.id);
   }
 
   onTalkDrop(event: CdkDragDrop<Talk[]>) {
@@ -49,13 +43,13 @@ export class AppComponent {
     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
   }
 
-  editTalk(talk: Talk) {
+  addEditTalk(talk: Talk, track: Track, edit = false) {
     // Use the injected dialog service to launch the previously created edit-talk
     // component. Once the dialog closes, we assign the updated talk data to
     // the specified talk.
-    this._dialog.open(EditTalkComponent, {data: talk, width: '500px'})
+    this._dialog.open(EditTalkComponent, {data: {talk, edit}, width: '500px'})
       .afterClosed()
-      .subscribe(newTalkData => Object.assign(talk, newTalkData));
+      .subscribe(newTalkData => edit ? Object.assign(talk, newTalkData) : track.talks.unshift(newTalkData));
   }
 
   deleteTalk(talk: Talk, track: Track) {
@@ -68,5 +62,10 @@ export class AppComponent {
           track.talks.splice(track.talks.indexOf(talk), 1);
         }
       });
+  }
+
+  filterByDate(talks, asc = 1) {
+    talks = [...talks.sort((a: any, b: any) => (asc) * (new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()))];
+    console.log(talks);
   }
 }

@@ -7,54 +7,83 @@
         "title": "Track one",
         "talks": [
           {
+            "issueType": "epic",
             "text": "Keynote addess",
             "speaker": "Igor Minar",
+            "createdAt": "2018-01-01T09:26:05.026Z",
             "image": "https://i.ytimg.com/vi/7Bj4R7lGl4A/maxresdefault.jpg"
           },
           {
+            "issueType": "bug",
             "text": "VS Code Can Do That",
             "speaker": "John Papa",
+            "createdAt": "2020-02-01T09:26:05.026Z",
             "tags": [
-              "Intro"
+              {
+                "name": "Intro",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "sub-task",
             "text": "How to save time & money by planning your ngUpgrade",
-            "speaker": "Sam Julien"
+            "speaker": "Sam Julien",
+            "createdAt": "2019-03-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "How to AI in JS?",
             "speaker": "Asim Hussain",
+            "createdAt": "2020-04-01T09:26:05.026Z",
             "tags": [
-              "Intro"
+              {
+                "name": "Intro",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "story",
             "text": "You Might Not Need NgRx",
-            "speaker": "Michael Ryan"
+            "speaker": "Michael Ryan",
+            "createdAt": "2020-05-01T09:26:05.026Z"
           },
           {
+            "issueType": "story",
             "text": "Upgrading to Angular without ngUpgrade",
-            "speaker": "Erin Coughlan"
+            "speaker": "Erin Coughlan",
+            "createdAt": "2020-06-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Why you need a build system, and why it should be Bazel",
-            "speaker": "Martin Probst"
+            "speaker": "Martin Probst",
+            "createdAt": "2020-07-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "The theory of Angular Ivy",
-            "speaker": "Alex Rickabaugh"
+            "speaker": "Alex Rickabaugh",
+            "createdAt": "2020-08-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Building an Angular PWA: Angular Service Worker or Workbox?",
             "speaker": "Maxim Salnikov",
+            "createdAt": "2020-09-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Angular Unit Testing - how to win friends, design better code, and get rich quick!",
-            "speaker": "Shai Reznik"
+            "speaker": "Shai Reznik",
+            "createdAt": "2020-10-01T09:26:05.026Z"
           }
         ]
       },
@@ -63,55 +92,89 @@
         "title": "Track two",
         "talks": [
           {
+            "issueType": "bug",
             "text": "Automating UI development",
-            "speaker": "Stefan Baumgartner and Katrin Freihofner"
+            "speaker": "Stefan Baumgartner and Katrin Freihofner",
+            "createdAt": "2020-11-01T09:26:05.026Z"
           },
           {
+            "issueType": "epic",
             "text": "RxJS schedulers in depth",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/London_Thames_Sunset_panorama_-_Feb_2008.jpg/640px-London_Thames_Sunset_panorama_-_Feb_2008.jpg",
             "speaker": "Michael Hladky",
+            "createdAt": "2020-12-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "sub-task",
             "text": "The good, the bad and the ugly - Component architecture at scale",
             "speaker": "Ana Cidre and Sherry List",
+            "createdAt": "2019-01-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "story",
             "text": "Universally speaking",
             "speaker": "Craig Spence",
+            "createdAt": "2019-02-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Optimize and debug change detection like a pro",
             "speaker": "Max Koretskyi",
+            "createdAt": "2019-03-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Nest the backend for your Angular application",
             "speaker": "Bo Vandersteene",
+            "createdAt": "2019-04-01T09:26:05.026Z",
             "tags": [
-              "Intro"
+              {
+                "name": "Intro",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Testing Angular with Cypress.io",
             "speaker": "Joe Eames",
+            "createdAt": "2019-05-01T09:26:05.026Z",
             "tags": [
-              "Intro"
+              {
+                "name": "Intro",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Location based immersive experiences with Angular and WebXR",
-            "speaker": "Aysegul Yonet"
+            "speaker": "Aysegul Yonet",
+            "createdAt": "2019-06-01T09:26:05.026Z"
           }
         ]
       },
@@ -120,17 +183,23 @@
         "title": "Mini workshops",
         "talks": [
           {
+            "issueType": "task",
             "text": "Deep dive into Angular CLI 7",
-            "speaker": "Noël Macé"
+            "speaker": "Noël Macé",
+            "createdAt": "2019-07-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Angular Material workshop",
             "speaker": "Kristiyan Kostadinov and Paul Gschwendtner",
+            "createdAt": "2019-08-01T09:26:05.026Z",
             "image": "https://pbs.twimg.com/media/DoRVQNuXUAAg7Zt.jpg"
           },
           {
+            "issueType": "task",
             "text": "#UseThePlatform with Stencil and Angular",
-            "speaker": "Gil Fink"
+            "speaker": "Gil Fink",
+            "createdAt": "2019-09-01T09:26:05.026Z"
           }
         ]
       },
@@ -139,17 +208,25 @@
         "title": "Office hours",
         "talks": [
           {
-            "text": "Stefan Baumgartner, Michael Hladky, Katrin Freihofner, Igor Minar"
+            "issueType": "task",
+            "text": "Stefan Baumgartner, Michael Hladky, Katrin Freihofner, Igor Minar",
+            "createdAt": "2019-10-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Ana Cidre, Sam Julien, Sherry List, Noël Macé, Michael Ryan",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/640px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/640px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg",
+            "createdAt": "2019-10-01T09:26:05.026Z"
           },
           {
-            "text": "Sani Yusuf, Craig Spence, Maxim Salnikov, Olivier Combe, Misko Hevery"
+            "issueType": "task",
+            "text": "Sani Yusuf, Craig Spence, Maxim Salnikov, Olivier Combe, Misko Hevery",
+            "createdAt": "2019-11-01T09:26:05.026Z"
           },
           {
-            "text": "Erin Coughlan, Martin Probst, Max Koretskyi, Bo Vandersteene"
+            "issueType": "task",
+            "text": "Erin Coughlan, Martin Probst, Max Koretskyi, Bo Vandersteene",
+            "createdAt": "2019-12-01T09:26:05.026Z"
           }
         ]
       },
@@ -158,16 +235,22 @@
         "title": "Q&A panels",
         "talks": [
           {
+            "issueType": "task",
             "text": "Upgrade",
-            "speaker": "Elana Olson, Erin Coughlan, Sam Julien"
+            "speaker": "Elana Olson, Erin Coughlan, Sam Julien",
+            "createdAt": "2019-01-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "UI",
-            "speaker": "Shmuela Jacobs, Ana Cidre, Sherry List, Kristiyan Kostadinov, Paul Gschwendtner, Katrin Freihofner"
+            "speaker": "Shmuela Jacobs, Ana Cidre, Sherry List, Kristiyan Kostadinov, Paul Gschwendtner, Katrin Freihofner",
+            "createdAt": "2019-02-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Ivy",
             "speaker": "Alex Rickabaugh, Jason Aden, Olivier Combe, Igor Minar, Misko Hevery",
+            "createdAt": "2019-03-01T09:26:05.026Z",
             "image": "https://pbs.twimg.com/media/DoHCNnlUUAUWfhG.jpg"
           }
         ]
@@ -182,40 +265,60 @@
         "title": "Track one",
         "talks": [
           {
+            "issueType": "task",
             "text": "Keynote address",
             "speaker": "Rob Wormald",
-            "image": "https://i.ytimg.com/vi/7Bj4R7lGl4A/maxresdefault.jpg"
+            "image": "https://i.ytimg.com/vi/7Bj4R7lGl4A/maxresdefault.jpg",
+            "createdAt": "2020-03-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Angular Ivy by example",
             "speaker": "Jason Aden",
+            "createdAt": "2020-03-31T09:20:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Migrating from AngularJS to Angular",
             "speaker": "Elana Olson",
+            "createdAt": "2020-02-01T09:26:05.026Z",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/640px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
           },
           {
+            "issueType": "task",
             "text": "Climbing up injector trees",
             "speaker": "Uri Shaked and Kapunahele Wong",
+            "createdAt": "2020-02-01T08:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Architectures for huge Angular based enterprise applications: npm Packages, Monorepos and Micro Apps",
-            "speaker": "Manfred Steyer"
+            "speaker": "Manfred Steyer",
+            "createdAt": "2020-02-01T07:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Talk details coming soon",
-            "speaker": "Filipe Silva"
+            "speaker": "Filipe Silva",
+            "createdAt": "2019-02-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Runtime i18n with Ivy",
-            "speaker": "Olivier Combe"
+            "speaker": "Olivier Combe",
+            "createdAt": "2020-01-01T07:26:05.026Z"
           }
         ]
       },
@@ -224,35 +327,53 @@
         "title": "Track two",
         "talks": [
           {
+            "issueType": "task",
             "text": "Automate G Suite with Apps Script and Angular",
-            "speaker": "Grant Timmerman"
+            "speaker": "Grant Timmerman",
+            "createdAt": "2010-02-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Dynamic reactive forms with GraphQL",
-            "speaker": "Juan Stoppa"
+            "speaker": "Juan Stoppa",
+            "createdAt": "2020-01-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "The life of an Angular pull request",
             "speaker": "Manu Murthy",
+            "createdAt": "2020-02-01T09:26:05.026Z",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/London_Thames_Sunset_panorama_-_Feb_2008.jpg/640px-London_Thames_Sunset_panorama_-_Feb_2008.jpg"
           },
           {
+            "issueType": "task",
             "text": "White-labeling & A/B testing with interchangeable components",
             "speaker": "Younes Jaaidi",
+            "createdAt": "2010-02-01T09:26:05.026Z",
             "tags": [
-              "Deep-dive"
+              {
+                "name": "Deep-dive",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "It’s alive! Dynamic components in Angular",
             "speaker": "Shmuela Jacobs",
+            "createdAt": "2010-01-01T09:26:05.026Z",
             "tags": [
-              "Intro"
+              {
+                "name": "Intro",
+                "color": "#e0e0e0"
+              }
             ]
           },
           {
+            "issueType": "task",
             "text": "Crossing Across Platforms",
-            "speaker": "Sani Yusuf"
+            "speaker": "Sani Yusuf",
+            "createdAt": "2019-02-01T09:26:05.026Z"
           }
         ]
       },
@@ -261,8 +382,10 @@
         "title": "Mini workshops",
         "talks": [
           {
+            "issueType": "task",
             "text": "Getting to grips with Angular State with NgRx and RxJS",
-            "speaker": "Ferdinand Malcher and Johannes Hoppe"
+            "speaker": "Ferdinand Malcher and Johannes Hoppe",
+            "createdAt": "2019-03-01T09:26:05.026Z"
           }
         ]
       },
@@ -270,16 +393,23 @@
         "title": "Office hours",
         "talks": [
           {
+            "issueType": "task",
             "text": "Joe Eames, Alex Rickabaugh, Gil Fink, Shai Reznik, Aysegul Yonet"
           },
           {
-            "text": "Rob Wormald, Elana Olson, Grant Timmerman, Jason Aden, Juan Stoppa"
+            "issueType": "task",
+            "text": "Rob Wormald, Elana Olson, Grant Timmerman, Jason Aden, Juan Stoppa",
+            "createdAt": "2019-03-01T09:26:05.026Z"
           },
           {
-            "text": "John Papa, Manu Murthy, Younes Jaaidi, Manfred Steyer, Ferdinand Malcher, Johannes Hoppe"
+            "issueType": "task",
+            "text": "John Papa, Manu Murthy, Younes Jaaidi, Manfred Steyer, Ferdinand Malcher, Johannes Hoppe",
+            "createdAt": "2019-04-01T09:26:05.026Z"
           },
           {
-            "text": "Shmuela Jacobs, Uri Shaked, Kapunahele Wong, Stanimira Vlaeva, Filipe Silva"
+            "issueType": "task",
+            "text": "Shmuela Jacobs, Uri Shaked, Kapunahele Wong, Stanimira Vlaeva, Filipe Silva",
+            "createdAt": "2019-05-01T09:26:05.026Z"
           }
         ]
       },
@@ -288,24 +418,34 @@
         "title": "Q&A panels",
         "talks": [
           {
+            "issueType": "task",
             "text": "Tooling",
-            "speaker": "Martin Probst, John Papa, Manu Murthy, Manfred Steyer, Noël Macé, Filipe Silva"
+            "speaker": "Martin Probst, John Papa, Manu Murthy, Manfred Steyer, Noël Macé, Filipe Silva",
+            "createdAt": "2019-05-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Testing",
-            "speaker": "Joe Eames, Younes Jaaidi, Shai Reznik"
+            "speaker": "Joe Eames, Younes Jaaidi, Shai Reznik",
+            "createdAt": "2019-06-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Coding",
-            "speaker": "Ward Bell, Uri Shaked, Kapunahele Wong, Max Koretskyi, Michael Hladky, Gil Fink, Ashnita Bali"
+            "speaker": "Ward Bell, Uri Shaked, Kapunahele Wong, Max Koretskyi, Michael Hladky, Gil Fink, Ashnita Bali",
+            "createdAt": "2019-07-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Integration",
-            "speaker": "Sani Yusuf, Grant Timmerman, Juan Stoppa, Stanimira Vlaeva, Aysegul Yonet"
+            "speaker": "Sani Yusuf, Grant Timmerman, Juan Stoppa, Stanimira Vlaeva, Aysegul Yonet",
+            "createdAt": "2019-08-01T09:26:05.026Z"
           },
           {
+            "issueType": "task",
             "text": "Architecture",
-            "speaker": "Dominic Elm, Mike Ryan, Rob Wormald, Manfred Steyer, Craig Spence, Bo Vandersteene, Ferdinand Malcher, Johannes Hoppe"
+            "speaker": "Dominic Elm, Mike Ryan, Rob Wormald, Manfred Steyer, Craig Spence, Bo Vandersteene, Ferdinand Malcher, Johannes Hoppe",
+            "createdAt": "2019-09-01T09:26:05.026Z"
           }
         ]
       }

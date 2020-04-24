@@ -1,7 +1,15 @@
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <img *ngIf="talk.image" [src]="talk.image" alt="Talk image preview">
+  <img *ngIf="data?.talk.image" [src]="data?.talk.image" alt="Talk image preview">
   <mat-form-field>
     <input matInput placeholder="Talk description" required formControlName="text">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Issue Type</mat-label>
+    <mat-select formControlName="issueType">
+      <mat-option [style.background]="i.color" *ngFor="let i of issueTypesArrayWithColor" [value]="i.name">
+        {{i.name}}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
   <mat-form-field>
     <input matInput placeholder="Speaker" required formControlName="speaker">
@@ -16,9 +24,10 @@
           Render out all the chips that are set to the form control.
           Also listen for the `removed` event which will notify use when to remove a tag.
         -->
-      <mat-chip *ngFor="let tag of this.formGroup.get('tags').value" (removed)="removeTag(tag)">
-        {{tag}}
+      <mat-chip [style.background]="tag?.color ? tag.color : '#e0e0e0'" *ngFor="let tag of this.formGroup.get('tags').value" (removed)="removeTag(tag)">
+        {{tag?.name}}
         <!-- Add an icon that allows the user to delete a talk via click. -->
+        <mat-icon (click)="openColorPickerDialog(tag)" class="mat-icon notranslate mat-chip-remove mat-chip-trailing-icon material-icons mat-icon-no-color">color_lense</mat-icon>
         <mat-icon matChipRemove>cancel</mat-icon>
       </mat-chip>
 
@@ -36,6 +45,6 @@
       -->
     <button mat-button mat-dialog-close>Cancel</button>
 
-    <button mat-button type="submit" [disabled]="formGroup.invalid">Update</button>
+    <button mat-button type="submit" [disabled]="formGroup.invalid">{{data?.edit ? 'Update' : 'Add'}}</button>
   </mat-dialog-actions>
 </form>

@@ -1,20 +1,45 @@
 <app-drawer>
-  <div class="board" cdkDropList [cdkDropListData]="board.tracks" (cdkDropListDropped)="onTrackDrop($event)" cdkDropListOrientation="horizontal">
+    <div *ngFor="let board of boards; let boardIndex = index;" class="board" cdkDropList [cdkDropListData]="board.tracks" (cdkDropListDropped)="onTrackDrop($event)"
+    cdkDropListOrientation="horizontal">
 
-    <div class="card-list mat-elevation-z1" *ngFor="let track of board.tracks">
+    <div cdkDrag class="card-list mat-elevation-z1" *ngFor="let track of board.tracks; let trackIndex = index;">
+      <div class="row" fxLayoutAlign="start center">
+        <h2 fxFlex="80" class="mat-h2"><span contenteditable [textContent]="track?.title" (input)="track.title=$event.target.textContent"></span></h2>
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px" cdkDragHandle>
+          <!-- Filter Menu Starts Here-->
+          <button fxFlex="50" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>filter_list</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="filterByDate(track.talks, -1)">
+              <mat-icon>arrow_downward</mat-icon>
+              <span>Sort By(Date)</span>
+            </button>
+            <button mat-menu-item (click)="filterByDate(track.talks, 1)">
+              <mat-icon>arrow_upward</mat-icon>
+              <span>Sort By(Date)</span>
+            </button>
+          </mat-menu>
+          <button fxFlex="50" mat-icon-button aria-label="Example icon-button with a menu">
+            <mat-icon>drag_handle</mat-icon>
+          </button>
+        </div>
+      </div>
 
-      <h2 cdkDragHandle class="mat-h2">{{track.title}}</h2>
+      <!-- Filter Menu Ends Here-->
 
-      <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.talks"
-        [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">
+      <div *ngIf="!track['collapsed']" class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.talks"
+        [cdkDropListConnectedTo]="trackIds(boardIndex)" (cdkDropListDropped)="onTalkDrop($event)">
 
-        <app-card *ngFor="let talk of track.talks" [text]="talk.text" [tags]="talk.tags" [author]="talk.speaker"
-          [image]="talk.image" cdkDrag (edit)="editTalk(talk)" (delete)="deleteTalk(talk, track)"></app-card>
+        <app-card *ngFor="let talk of track.talks" [text]="talk.text" [createdAt]="talk?.createdAt" [tags]="talk.tags" [issueType]="talk?.issueType" [author]="talk.speaker"
+          [image]="talk.image" cdkDrag (edit)="addEditTalk(talk, track, true)" (delete)="deleteTalk(talk, track)"></app-card>
 
       </div>
 
-      <button (click)="addNewTalk(track)" color="primary" mat-raised-button>Add talk</button>
-
+      <div fxLayout="row" fxLayoutAlign="baseline baseline">
+        <button style="width: fit-content;" class="add-talk" (click)="addEditTalk(track, track)" color="primary" mat-raised-button>Add talk</button>
+        <span fxFlex style="text-align: right; cursor: pointer;" (click)="track['collapsed'] = !track['collapsed']">Click to {{ track['collapsed'] ? 'expand' : 'collapse'}}</span>
+      </div>
     </div>
 
   </div>

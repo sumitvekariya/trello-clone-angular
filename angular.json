@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "trello-clone-angular"
+  "defaultProject": "trello-clone-angular",
+  "cli": {
+    "analytics": false
+  }
 }

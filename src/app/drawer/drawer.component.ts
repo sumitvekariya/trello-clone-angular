@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { BoardService, Board } from '../board.service';
+import { BoardService } from '../board.service';
+import { Board } from '../shared/models/schema.model';
 
 @Component({
   selector: 'app-drawer',
@@ -22,12 +23,4 @@ export class DrawerComponent {
   .pipe(
     map(result => result.matches)
   );
-
-  get currentBoard() {
-    return this.boardService.currentBoard;
-  }
-
-  activate(board: Board) {
-    this.boardService.currentBoard = board;
-  }
 }

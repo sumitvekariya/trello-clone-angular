@@ -34,3 +34,15 @@
 //   font-size: 14px;
 //   margin-left: 8px;
 // }
+
+.card {
+  position: relative;
+}
+
+.icon {
+  font-size: 17px;
+  cursor: pointer;
+  position: absolute;
+  right: -6px;
+  top: 0px;
+}

@@ -6,9 +6,11 @@
 
   // Ensure that the board covers the viewport and add some padding to make it look better.
   width: 100%;
-  height: 100%;
+  height: 85vh;
   padding: 8px;
   box-sizing: border-box;
+
+  margin-bottom: 10px;
 
   // Only allow horizontal scrolling.
   overflow-x: auto;
@@ -40,7 +42,7 @@
     margin-bottom: 5px;
   }
 
-  button {
+  .add-talk {
     // The flex-shrink prevents the button from shrinking if the list content becomes too large.
     flex-shrink: 0;
     margin-top: 10px;
@@ -50,6 +52,7 @@
 .card-list-content {
   // Make the list scrollable and stretch it to take up the available height.
   overflow: auto;
+  overflow-x: hidden;
   flex-grow: 1;
 }
 
@@ -63,4 +66,13 @@
 // Hides the placeholder if an element is being dragged.
 .cdk-drag-placeholder {
   opacity: 0;
+}
+
+.cdk-drag-preview {
+  border: 2px dashed #673ab7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }

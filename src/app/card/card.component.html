@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="card" [style.backgroundColor]="issueTypesWithColor[issueType]?.color">
   <!-- mat-card allows us to optionally provide a card image. -->
   <img *ngIf="image" mat-card-image [src]="image" draggable="false">
 
@@ -13,14 +13,16 @@
         readonly chips so we `selectable` to `false`.
       -->
       <mat-chip-list>
-        <mat-chip *ngFor="let tag of tags" selectable="false">{{tag}}</mat-chip>
+        <mat-chip [style.background]="tag?.color ? tag.color : '#e0e0e0'" *ngFor="let tag of tags" selectable="false">{{tag?.name}}</mat-chip>
       </mat-chip-list>
     </div>
+
+    <mat-icon (click)="delete.next()" class="icon">cancel_outline</mat-icon>
   </mat-card-content>
 
   <!-- Section for buttons and the talk author. -->
   <mat-card-actions>
-    <button mat-button (click)="delete.next()">DELETE</button>
+    <!-- <button mat-button (click)="delete.next()">DELETE</button> -->
     <button mat-button (click)="edit.next()">EDIT</button>
   </mat-card-actions>
 </mat-card>
