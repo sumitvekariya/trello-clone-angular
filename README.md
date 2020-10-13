@@ -1,27 +1,71 @@
-# TrelloCloneAngular
+# Trello Clone built in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<details>
+  <summary>Table Of Content</summary>
+  <p>
 
-## Code scaffolding
+- [Trello Clone in Angular](#trello-clone-built-in-angular)
+  - [Working Demo](#working-demo)
+  - [Support](#support)
+  - [Author: Sumit Vekariya ✍️](#author-sumit-vekariya-️)
+  - [Upcoming](#upcoming)
+  - [Contributing](#contributing)
+  - [License](#license)
+  </p>
+  </details>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Working Demo
 
-## Build
+Check out the **working demo** -> https://www.loom.com/share/c5b365e49e12480385228ee41313602a
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+![Trello Clone in Angular][demo]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Support
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you like my work, feel free to:
+
+- ⭐ this repository. And we will be happy together :)
+- <a title="Thanks for your support!" href="https://www.buymeacoffee.com/sarkazein7" target="_blank"><img src="https://res.cloudinary.com/dvujyxh7e/image/upload/c_thumb,w_140,g_face/v1596378474/default-orange_uthxgz.jpg" alt="Buy Me A Coffee"></a>
+
+Thanks a bunch for stopping by and supporting me!
+
+
+
+
+## Author: Sumit Vekariya ✍️
+
+- A young and passionate front-end engineer. Working with MEAN Stack + Flutter + Graphql. Like reading, programming & biking.
+- Personal blog: https://medium.com/@sumitvekariya7/
+- Say hello: sumitvekariya7 [et] gmail [dot] com
+
+
+## Upcoming
+
+I am having some ideas to start building some of my favorite games (and easy to build 🤣). It could be
+
+
+If you would like to collaborate, tag [@sarkazein7][twitter] on Twitter 👏👏👏
+
+## Contributing
+
+If you have any ideas, just [open an issue][issues] and tell me what you think. Notes that it is a very simple game, you could add in a lot of stuff: introducing level, add more invaders and stuff like that.
+
+If you'd like to contribute, please fork the repository and make changes as you'd like. [Pull requests][pull] are warmly welcome.
+
+## License
+
+Feel free to use my code on your project. It would be great if you put a reference to this repository.
+
+[MIT](https://opensource.org/licenses/MIT)
+
+[twitter]: https://twitter.com/sarkazein7
+[demo]: https://ibb.co/CmMW8mD
+[assets-audio-player]: https://pub.dev/packages/assets_audio_player
+[issues]: https://github.com/sumitvekariya/trello-clone-angular/issues/new
+[pull]: https://github.com/sumitvekariya/trello-clone-angular/compare
